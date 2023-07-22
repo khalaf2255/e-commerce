@@ -1,0 +1,154 @@
+@import url("https://fonts.googleapis.com/css2?family=Monoton&family=Quicksand:wght@500;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 2.4rem;
+  font-family: sans-serif;
+  color: #5a3e2b;
+  font-family: "Quicksand";
+  font-weight: 500;
+}
+
+.app {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+.container {
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.login__form {
+  width: 700px;
+  border: 3px solid;
+  padding: 4em 1em;
+  height: 73%;
+}
+.login__form .lable__input {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+  padding: 15px 35px;
+  position: relative;
+}
+.login__form .lable__input input {
+  font-size: 1em;
+  padding: 6px;
+  margin-left: 30px;
+  border-radius: 4px;
+}
+
+.login__form .lable__input .eye__show {
+  position: absolute;
+  right: -0.4em;
+  font-size: 2em;
+  top: 0px;
+  cursor: pointer;
+}
+.login__form .lable__input .eye__show.un__show::after {
+  content: "ـــــ";
+  position: absolute;
+  top: -2px;
+  left: -5px;
+  rotate: -30deg;
+}
+.btn {
+  padding: 0.4em 0.9em;
+  font-size: 0.8em;
+  position: relative;
+  top: 1em;
+  background: #00bcd4;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+}
+.newAccount {
+  cursor: pointer;
+  text-decoration: underline;
+  color: #00bcd4;
+}
+
+.account__List {
+  display: flex;
+  flex-direction: column;
+}
+.wrong {
+  border-color: red;
+}
+.tryAgain {
+  color: red;
+}
+.card {
+  display: flex;
+  list-style: none;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+.card li img {
+  width: 100%;
+  height: 200px;
+}
+.card li {
+  width: 300px;
+  border: 3px solid;
+  margin: 7px;
+  padding: 30px 15px;
+}
+.shop {
+  width: 100%;
+}
+.card .btn {
+  width: 100%;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2em;
+}
+.navbar .card__icon {
+  font-size: 3em;
+  cursor: pointer;
+}
+.card__body {
+  position: absolute;
+  width: 500px;
+  background: #00bcd4;
+  right: 27px;
+  padding: 10px;
+  min-height: 300px;
+  border-radius: 15px;
+  z-index: 999;
+  color: #fff;
+  font-weight: bold;
+}
+
+ .card__body li { 
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  gap: 5em;
+  margin: 0.4em auto;
+  padding: 0 22px;
+  align-items: center;
+ }
+  .card__body img {
+    width: 3em;
+  }
+  .close {
+    color: red;
+    cursor: pointer;
+  }
